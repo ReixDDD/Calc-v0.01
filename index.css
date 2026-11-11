@@ -1,0 +1,1099 @@
+/* ==========================================================================
+   CHARCOAL GRAPHITE & CARMINE (#C02721) — THEME FOR GOOGLE AI STUDIO
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+
+  /* Фоны (Светлая тема) */
+  --bg-page: #F8FAFC;
+  --bg-surface: #FFFFFF;
+  --bg-elevated: #F1F5F9;
+  --bg-hover: #E2E8F0;
+  --bg-glass: rgba(255, 255, 255, 0.85);
+
+  /* Границы и разделители */
+  --border-subtle: #E2E8F0;
+  --border-strong: #CBD5E1;
+
+  /* Типографика */
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #94A3B8;
+  --text-on-brand: #FFFFFF;
+
+  /* Главный акцент (#C02721) */
+  --brand-primary: #C02721;
+  --brand-hover: #9E1E19;
+  --brand-active: #821713;
+  --brand-text: #C02721;
+  --brand-soft-bg: #FEF2F2;
+  --brand-soft-border: #FECACA;
+  --brand-focus-ring: transparent;
+
+  /* Статусы (ошибка уведена в холодный малиновый, чтобы не спорить с брендом) */
+  --status-success: #10B981;
+  --status-success-bg: #ECFDF5;
+  --status-warning: #F59E0B;
+  --status-warning-bg: #FFFBEB;
+  --status-danger: #E11D48;
+  --status-danger-bg: #FFF1F2;
+
+  /* Тени и скругления */
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-brand: none;
+  --radius-sm: 2px;
+  --radius-md: 3px;
+  --radius-lg: 4px;
+
+  /* Алиасы для интерактивных карточек и кнопок */
+  --hover-brand: var(--brand-text);
+  --hover-brand-bg: var(--brand-soft-bg);
+  --hover-card-shadow: none;
+
+  /* Матовый минималистичный фон витрины иллюстраций (Светлая тема) */
+  --studio-stage-bg: #F4F6FA;
+  --studio-stage-border: #E2E8F0;
+  --studio-stage-inset: none;
+
+  /* Объёмные тактильные карточки без размытого свечения (Светлая тема) */
+  --card-3d-surface: linear-gradient(162deg, #FFFFFF 0%, #F7FAFC 56%, #EBF1F8 100%);
+  --card-3d-selected-surface: linear-gradient(162deg, #FFF5F5 0%, #FEF2F2 58%, #FCE4E4 100%);
+  --card-3d-hover-start: #FFFFFF;
+  --card-3d-hover-mid: #F6F9FE;
+  --card-3d-hover-end: #E6EEF8;
+  --card-3d-top-rim: #FFFFFF;
+  --card-3d-bottom-rim: #CBD5E1;
+  --card-3d-extrude-color: #BFCBE0;
+  --card-3d-bevel:
+    inset 0 1px 0 0 #FFFFFF,
+    inset 1px 0 0 0 rgba(255, 255, 255, 0.9),
+    inset 0 -3px 0 0 #D0DBE9,
+    inset -1px 0 0 0 #DCE4F0;
+
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.dark,
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  /* Фоны (Угольный графит — Темная тема) */
+  --bg-page: #121316;
+  --bg-surface: #1E2024;
+  --bg-elevated: #282B30;
+  --bg-hover: #32363E;
+  --bg-glass: rgba(30, 32, 36, 0.85);
+
+  /* Границы и разделители */
+  --border-subtle: #32363E;
+  --border-strong: #454A54;
+
+  /* Типографика */
+  --text-primary: #F1F5F9;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  --text-on-brand: #FFFFFF;
+
+  /* Главный акцент (#C02721 + высветленный текст для контраста на графите) */
+  --brand-primary: #C02721;
+  --brand-hover: #D93832;
+  --brand-active: #A8201B;
+  --brand-text: #E54D47;
+  --brand-soft-bg: #2C1517;
+  --brand-soft-border: #5C1F22;
+  --brand-focus-ring: transparent;
+
+  /* Статусы */
+  --status-success: #34D399;
+  --status-success-bg: rgba(16, 185, 129, 0.12);
+  --status-warning: #FBBF24;
+  --status-warning-bg: rgba(245, 158, 11, 0.12);
+  --status-danger: #FB7185;
+  --status-danger-bg: rgba(225, 29, 72, 0.15);
+
+  /* Тени */
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-brand: none;
+
+  /* Алиасы для интерактивных карточек и кнопок */
+  --hover-brand: var(--brand-text);
+  --hover-brand-bg: var(--brand-soft-bg);
+  --hover-card-shadow: none;
+
+  /* Матовый минималистичный фон витрины иллюстраций (Тёмная тема) */
+  --studio-stage-bg: #16181D;
+  --studio-stage-border: #2C303A;
+  --studio-stage-inset: none;
+
+  /* Объёмные тактильные карточки без размытого свечения (Тёмная тема) */
+  --card-3d-surface: linear-gradient(162deg, #282C35 0%, #1E2025 56%, #15171B 100%);
+  --card-3d-selected-surface: linear-gradient(162deg, #381A1D 0%, #2C1517 60%, #221012 100%);
+  --card-3d-hover-start: #303540;
+  --card-3d-hover-mid: #20242B;
+  --card-3d-hover-end: #14161B;
+  --card-3d-top-rim: rgba(255, 255, 255, 0.2);
+  --card-3d-bottom-rim: #0D0F13;
+  --card-3d-extrude-color: #08090C;
+  --card-3d-bevel:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.13),
+    inset 1px 0 0 0 rgba(255, 255, 255, 0.06),
+    inset 0 -3px 0 0 #0D0F13,
+    inset -1px 0 0 0 #14171D;
+}
+
+/* ==========================================================================
+   БАЗОВЫЕ СТИЛИ
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+/* Выделение текста */
+::selection {
+  background-color: var(--brand-primary);
+  color: var(--text-on-brand);
+}
+
+/* Кастомный аккуратный скроллбар */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-page);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* ==========================================================================
+   ГОТОВЫЕ UI-КЛАССЫ ДЛЯ КОМПОНЕНТОВ
+   ========================================================================== */
+
+/* Карточки и контейнеры */
+.surface-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: none;
+}
+
+.surface-elevated {
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+}
+
+/* Активная/выбранная карточка (например, выбранный тариф или опция) */
+.surface-card-active {
+  background-color: var(--brand-soft-bg);
+  border: 1px solid var(--brand-soft-border);
+  border-radius: var(--radius-lg);
+}
+
+/* Кнопки */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--brand-primary);
+  color: var(--text-on-brand);
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  box-shadow: none;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--brand-hover);
+}
+
+.btn-primary:active {
+  background-color: var(--brand-active);
+  transform: translateY(1px);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--bg-elevated);
+  color: var(--text-primary);
+  font-weight: 500;
+  padding: 0.625rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-hover);
+  border-color: var(--border-strong);
+}
+
+/* Поля ввода, селекты, текстовые области */
+.input-field {
+  width: 100%;
+  background-color: var(--bg-elevated);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 0.625rem 0.875rem;
+  font-size: 0.9375rem;
+  outline: none;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.input-field::placeholder {
+  color: var(--text-muted);
+}
+
+.input-field:focus,
+input:not([type="checkbox"]):not([type="radio"]):not([type="file"]):not([type="color"]):focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--brand-primary) !important;
+  box-shadow: none !important;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: var(--brand-primary);
+}
+
+/* Акцентные ссылки и бейджи */
+.text-brand {
+  color: var(--brand-text);
+}
+
+.badge-brand {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 2px;
+  background-color: var(--brand-soft-bg);
+  color: var(--brand-text);
+  border: 1px solid var(--brand-soft-border);
+}
+
+/* Табличное выравнивание цифр для цен, тиражей, размеров и коэффициентов */
+input[type="number"],
+.ui-price-value,
+.ui-unit-price,
+.tabular-nums,
+table td,
+table th {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Объёмные тактильные карточки каталога: деликатное увеличение + лёгкий наклон -0.5°,
+   плавное перетекание между соседними карточками и идеально чёткий текст на 2D-сетке */
+.ui-hover-card {
+  --card-tilt-angle: -0.5deg;
+  --card-hover-scale: 1.0145;
+  --card-visual-scale: 1.0205;
+}
+
+.ui-hover-card-compact {
+  --card-tilt-angle: -0.5deg;
+  --card-hover-scale: 1.0233;
+  --card-visual-scale: 1.0293;
+}
+
+.ui-hover-card,
+.ui-hover-card-compact {
+  position: relative;
+  isolation: isolate;
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.ui-hover-card > *,
+.ui-hover-card-compact > * {
+  position: relative;
+  z-index: 2;
+}
+
+.ui-hover-card::before,
+.ui-hover-card-compact::before,
+.ui-hover-card::after,
+.ui-hover-card-compact::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 0;
+  backface-visibility: hidden;
+  transform-origin: center center;
+  transform: perspective(1250px) rotate3d(1, 1, 0, 0deg) scale3d(1, 1, 1);
+}
+
+.ui-hover-card::before,
+.ui-hover-card-compact::before {
+  border: 1px solid var(--border-subtle);
+  background: var(--card-3d-surface);
+  box-shadow: var(--card-3d-bevel);
+  transition: transform 0.34s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.ui-hover-card::after,
+.ui-hover-card-compact::after {
+  opacity: 0;
+  border: 1px solid var(--border-strong);
+  background: linear-gradient(
+    225deg,
+    var(--card-3d-hover-start) 0%,
+    var(--card-3d-hover-mid) 56%,
+    var(--card-3d-hover-end) 100%
+  );
+  box-shadow:
+    inset -1px 1px 0 0 var(--card-3d-top-rim),
+    inset 0 -2px 0 0 var(--card-3d-bottom-rim),
+    1px 1.5px 0 0 var(--card-3d-extrude-color);
+  transition:
+    transform 0.34s cubic-bezier(0.22, 0.61, 0.36, 1),
+    opacity 0.28s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.ui-hover-card-compact[data-selected="true"]::before,
+.ui-hover-card-compact[data-selected="true"]::after {
+  inset: -2px;
+  border: 2px solid var(--brand-text);
+  background: var(--card-3d-selected-surface);
+}
+
+.ui-hover-card[data-leaving="true"],
+.ui-hover-card-compact[data-leaving="true"] {
+  z-index: 6;
+}
+
+.ui-hover-card:focus-visible,
+.ui-hover-card-compact:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
+  z-index: 12;
+}
+
+.ui-hover-card:hover,
+.ui-hover-card-compact:hover {
+  z-index: 12;
+}
+
+.ui-hover-card:hover::before,
+.ui-hover-card-compact:hover::before {
+  transform:
+    perspective(1250px)
+    rotate3d(1, 1, 0, var(--card-tilt-angle))
+    scale3d(var(--card-hover-scale), var(--card-hover-scale), 1);
+  transition: transform 0.26s cubic-bezier(0.22, 0.68, 0.24, 1);
+}
+
+.ui-hover-card:hover::after,
+.ui-hover-card-compact:hover::after {
+  opacity: 1;
+  transform:
+    perspective(1250px)
+    rotate3d(1, 1, 0, var(--card-tilt-angle))
+    scale3d(var(--card-hover-scale), var(--card-hover-scale), 1);
+  transition:
+    transform 0.26s cubic-bezier(0.22, 0.68, 0.24, 1),
+    opacity 0.22s cubic-bezier(0.22, 0.68, 0.24, 1);
+}
+
+/* Сетка карточек вплотную с общими тонкими границами 1px */
+.ui-flush-grid {
+  padding-top: 1px;
+  padding-left: 1px;
+}
+
+.ui-flush-grid > .ui-hover-card,
+.ui-flush-grid > .ui-hover-card-compact {
+  width: calc(100% + 1px);
+  margin-top: -1px;
+  margin-left: -1px;
+  border-radius: 0 !important;
+  position: relative;
+  z-index: 1;
+}
+
+.ui-flush-grid > .ui-hover-card[data-leaving="true"],
+.ui-flush-grid > .ui-hover-card-compact[data-leaving="true"] {
+  z-index: 6;
+}
+
+.ui-flush-grid > .ui-hover-card:hover,
+.ui-flush-grid > .ui-hover-card-compact:hover,
+.ui-flush-grid > .ui-hover-card:focus-visible,
+.ui-flush-grid > .ui-hover-card-compact:focus-visible {
+  z-index: 12;
+}
+
+.ui-studio-stage {
+  background: var(--studio-stage-bg);
+  border: 1px solid var(--studio-stage-border);
+  box-shadow: var(--studio-stage-inset);
+  transition: background 0.18s ease, border-color 0.18s ease;
+}
+
+.ui-hover-card .ui-studio-stage,
+.ui-hover-card-compact .ui-studio-stage {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.ui-hover-card .ui-card-banner,
+.ui-hover-card-compact .ui-subcat-visual {
+  z-index: 2;
+  backface-visibility: hidden;
+  transform-origin: center center;
+  transform: perspective(1250px) rotate3d(1, 1, 0, 0deg) scale3d(1, 1, 1);
+  transition: transform 0.34s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.ui-hover-card:hover .ui-card-banner,
+.ui-hover-card-compact:hover .ui-subcat-visual {
+  transform:
+    perspective(1250px)
+    rotate3d(1, 1, 0, var(--card-tilt-angle))
+    scale3d(var(--card-visual-scale), var(--card-visual-scale), 1);
+  transition: transform 0.26s cubic-bezier(0.22, 0.68, 0.24, 1);
+}
+
+.ui-hover-card .ui-card-title,
+.ui-hover-card-compact .ui-subcat-title {
+  transform: none !important;
+  transition: color 0.24s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.ui-hover-card:hover .ui-card-title,
+.ui-hover-card-compact:hover .ui-subcat-title {
+  color: var(--hover-brand) !important;
+  transform: none !important;
+}
+
+/* Плоские карточки в шапке (мега-меню): без 3D-фасок, градиентов объёма и наклона,
+   но с тем же плавным увеличением и идеально чётким текстом */
+.ui-header-shell .ui-hover-card-compact,
+.ui-header-megamenu-card {
+  --card-tilt-angle: 0deg;
+  --header-flat-card-bg: #F8FAFC;
+  --header-flat-card-hover-bg: #F1F5F9;
+}
+
+.dark .ui-header-shell .ui-hover-card-compact,
+.dark .ui-header-megamenu-card,
+[data-theme="dark"] .ui-header-shell .ui-hover-card-compact,
+[data-theme="dark"] .ui-header-megamenu-card {
+  --header-flat-card-bg: #25282E;
+  --header-flat-card-hover-bg: #2E323B;
+}
+
+.ui-header-shell .ui-hover-card-compact::before,
+.ui-header-megamenu-card::before {
+  background: var(--header-flat-card-bg);
+  border: 1px solid var(--border-subtle);
+  box-shadow: none;
+  transform: scale3d(1, 1, 1);
+}
+
+.ui-header-shell .ui-hover-card-compact::after,
+.ui-header-megamenu-card::after {
+  background: var(--header-flat-card-hover-bg);
+  border: 1px solid var(--border-strong);
+  box-shadow: none;
+  transform: scale3d(1, 1, 1);
+}
+
+.ui-header-shell .ui-hover-card-compact[data-selected="true"]::before,
+.ui-header-shell .ui-hover-card-compact[data-selected="true"]::after,
+.ui-header-megamenu-card[data-selected="true"]::before,
+.ui-header-megamenu-card[data-selected="true"]::after {
+  inset: -2px;
+  border: 2px solid var(--brand-text);
+  background: var(--brand-soft-bg);
+  box-shadow: none;
+}
+
+.ui-header-shell .ui-hover-card-compact:hover::before,
+.ui-header-megamenu-card:hover::before {
+  transform: scale3d(var(--card-hover-scale), var(--card-hover-scale), 1);
+}
+
+.ui-header-shell .ui-hover-card-compact:hover::after,
+.ui-header-megamenu-card:hover::after {
+  opacity: 1;
+  transform: scale3d(var(--card-hover-scale), var(--card-hover-scale), 1);
+}
+
+.ui-header-shell .ui-hover-card-compact .ui-subcat-visual,
+.ui-header-megamenu-card .ui-subcat-visual {
+  transform: scale3d(1, 1, 1);
+}
+
+.ui-header-shell .ui-hover-card-compact:hover .ui-subcat-visual,
+.ui-header-megamenu-card:hover .ui-subcat-visual {
+  transform: scale3d(var(--card-visual-scale), var(--card-visual-scale), 1);
+}
+
+.ui-subcat-visual img,
+.ui-card-banner img {
+  filter: none;
+}
+
+.dark .ui-subcat-visual img,
+.dark .ui-card-banner img,
+[data-theme="dark"] .ui-subcat-visual img,
+[data-theme="dark"] .ui-card-banner img {
+  filter: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ui-hover-card::before,
+  .ui-hover-card-compact::before,
+  .ui-hover-card::after,
+  .ui-hover-card-compact::after,
+  .ui-kind-card::before,
+  .ui-kind-card::after,
+  .ui-hover-card .ui-card-banner,
+  .ui-hover-card-compact .ui-subcat-visual,
+  .ui-kind-card .ui-kind-card-visual {
+    transition: none !important;
+    transform: none !important;
+  }
+}
+
+.ui-subcat-square-visual svg,
+.ui-subcat-square-visual img {
+  width: 176px !important;
+  height: 136px !important;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Кнопки внутри карточек, шапки и меню */
+.ui-action-btn,
+.ui-nav-btn,
+.ui-megamenu-link,
+.ui-breadcrumb-link {
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.ui-action-btn:hover {
+  border-color: var(--hover-brand) !important;
+  background-color: var(--hover-brand-bg) !important;
+}
+
+.ui-nav-btn:hover {
+  border-color: var(--hover-brand) !important;
+}
+
+.ui-megamenu-link:hover {
+  color: var(--hover-brand) !important;
+}
+
+.ui-breadcrumb-link:hover {
+  color: var(--hover-brand) !important;
+}
+
+/* Индикация пересчёта итоговой стоимости */
+@keyframes uiPricePulse {
+  0%, 100% {
+    opacity: 0.55;
+  }
+  50% {
+    opacity: 0.32;
+  }
+}
+
+.ui-price-value {
+  display: inline-block;
+  transition: color 0.18s ease, opacity 0.18s ease, filter 0.18s ease;
+}
+
+.ui-price-calculating {
+  color: var(--text-muted) !important;
+  filter: grayscale(1);
+  animation: uiPricePulse 0.9s ease-in-out infinite;
+}
+
+.ui-unit-price {
+  transition: opacity 0.18s ease, color 0.18s ease;
+}
+
+.ui-unit-price-calculating {
+  opacity: 0.45;
+}
+
+/* Центральный контейнер приложения — всегда строго фиксированный 1120px по центру */
+.ui-app-shell {
+  width: 100%;
+  max-width: 1120px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.ui-header-shell {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.ui-header-system-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Контейнер рабочей области калькулятора/каталога с внешними боковыми панелями */
+.ui-calc-page-layout {
+  position: relative;
+  width: 100%;
+}
+
+.ui-sidebar-sticky-inner {
+  position: sticky;
+  top: 18px;
+}
+
+.ui-column-header-box {
+  height: 68px;
+  min-height: 68px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1440px) {
+  .ui-kinds-sidebar {
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    right: calc(100% + 16px);
+    width: clamp(200px, calc((100vw - 1120px) / 2 - 28px), 270px);
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .ui-estimate-sidebar {
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: calc(100% + 16px);
+    width: clamp(240px, calc((100vw - 1120px) / 2 - 28px), 340px);
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .ui-kinds-sidebar .ui-sidebar-sticky-inner,
+  .ui-estimate-sidebar .ui-sidebar-sticky-inner {
+    pointer-events: auto;
+  }
+
+  .ui-kinds-sidebar-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .ui-calc-page-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .ui-kinds-sidebar {
+    position: static;
+    width: 100%;
+  }
+
+  .ui-estimate-sidebar {
+    position: static;
+    width: 100%;
+  }
+
+  .ui-sidebar-sticky-inner {
+    position: static;
+  }
+
+  .ui-kinds-sidebar-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 12px;
+  }
+}
+
+.ui-kind-card {
+  --card-tilt-angle: -0.5deg;
+  --card-hover-scale: 1.024;
+  --card-visual-scale: 1.03;
+  position: relative;
+  isolation: isolate;
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.ui-kind-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+.ui-kind-card::before,
+.ui-kind-card::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 0;
+  backface-visibility: hidden;
+  transform-origin: center center;
+  transform: perspective(1200px) rotate3d(1, 1, 0, 0deg) scale3d(1, 1, 1);
+}
+
+.ui-kind-card::before {
+  border: 1px solid var(--border-subtle);
+  background: var(--card-3d-surface);
+  box-shadow: var(--card-3d-bevel);
+  transition: transform 0.34s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.ui-kind-card::after {
+  opacity: 0;
+  border: 1px solid var(--border-strong);
+  background: linear-gradient(
+    225deg,
+    var(--card-3d-hover-start) 0%,
+    var(--card-3d-hover-mid) 56%,
+    var(--card-3d-hover-end) 100%
+  );
+  box-shadow:
+    inset -1px 1px 0 0 var(--card-3d-top-rim),
+    inset 0 -2px 0 0 var(--card-3d-bottom-rim),
+    1px 1.5px 0 0 var(--card-3d-extrude-color);
+  transition:
+    transform 0.34s cubic-bezier(0.22, 0.61, 0.36, 1),
+    opacity 0.28s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.ui-kind-card[aria-pressed="true"]::before,
+.ui-kind-card[aria-pressed="true"]::after {
+  inset: -2px;
+  border: 2px solid var(--brand-text);
+  background: var(--card-3d-selected-surface);
+}
+
+.ui-kind-card[data-leaving="true"] {
+  z-index: 5;
+}
+
+.ui-kind-card:hover {
+  z-index: 10;
+}
+
+.ui-kind-card:hover::before {
+  transform:
+    perspective(1200px)
+    rotate3d(1, 1, 0, var(--card-tilt-angle))
+    scale3d(var(--card-hover-scale), var(--card-hover-scale), 1);
+  transition: transform 0.26s cubic-bezier(0.22, 0.68, 0.24, 1);
+}
+
+.ui-kind-card:hover::after {
+  opacity: 1;
+  transform:
+    perspective(1200px)
+    rotate3d(1, 1, 0, var(--card-tilt-angle))
+    scale3d(var(--card-hover-scale), var(--card-hover-scale), 1);
+  transition:
+    transform 0.26s cubic-bezier(0.22, 0.68, 0.24, 1),
+    opacity 0.22s cubic-bezier(0.22, 0.68, 0.24, 1);
+}
+
+.ui-kind-card .ui-kind-card-visual {
+  z-index: 2;
+  backface-visibility: hidden;
+  transform-origin: center center;
+  transform: perspective(1200px) rotate3d(1, 1, 0, 0deg) scale3d(1, 1, 1);
+  transition: transform 0.34s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.ui-kind-card:hover .ui-kind-card-visual {
+  transform:
+    perspective(1200px)
+    rotate3d(1, 1, 0, var(--card-tilt-angle))
+    scale3d(var(--card-visual-scale), var(--card-visual-scale), 1);
+  transition: transform 0.26s cubic-bezier(0.22, 0.68, 0.24, 1);
+}
+
+/* Быстрые кнопки выбора тиража (Tier Pills) */
+.ui-tier-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.ui-tier-pill {
+  padding: 4px 10px;
+  border-radius: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.1s ease;
+}
+
+.ui-tier-pill:hover {
+  border-color: var(--hover-brand) !important;
+}
+
+.ui-tier-pill:active {
+  transform: translateY(1px);
+}
+
+/* Печатная версия Коммерческого Предложения (КП) */
+.ui-print-only-kp {
+  display: none;
+}
+
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #0F172A !important;
+  }
+
+  .ui-header-shell,
+  .ui-kinds-sidebar,
+  .ui-no-print,
+  .ui-calc-interactive-area {
+    display: none !important;
+  }
+
+  .ui-app-shell {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .ui-calc-page-layout,
+  .ui-estimate-sidebar,
+  .ui-sidebar-sticky-inner {
+    position: static !important;
+    width: 100% !important;
+    display: block !important;
+  }
+
+  .ui-print-only-kp {
+    display: block !important;
+    padding: 12px 0;
+    color: #0F172A !important;
+    background: #FFFFFF !important;
+  }
+
+  .ui-print-kp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px solid #0F172A;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+  }
+
+  .ui-print-kp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+  }
+
+  .ui-print-kp-table th,
+  .ui-print-kp-table td {
+    border: 1px solid #CBD5E1;
+    padding: 8px 10px;
+    vertical-align: top;
+    text-align: left;
+  }
+
+  .ui-print-kp-table th {
+    background: #F1F5F9 !important;
+    font-weight: 700;
+  }
+}
+
+/* Адаптивные сетки для мобильных устройств и планшетов (< 768px) */
+.ui-calc-main-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 350px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.ui-calc-main-grid--single {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.ui-form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.ui-form-grid-eyelets-3 {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.05fr) minmax(0, 1.13fr);
+  gap: 12px;
+}
+
+.ui-form-grid-wf-dims-3 {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1.15fr) minmax(0, 0.7fr);
+  gap: 12px;
+}
+
+.ui-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ui-admin-maincat-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr 1.6fr auto;
+  gap: 12px;
+  align-items: end;
+}
+
+.ui-admin-subcat-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr 0.75fr 0.8fr 1.5fr auto;
+  gap: 10px;
+  align-items: end;
+}
+
+.ui-admin-prod-grid-1 {
+  display: grid;
+  grid-template-columns: 1.5fr 1.3fr 0.7fr 0.7fr;
+  gap: 12px;
+}
+
+.ui-admin-prod-grid-2 {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 1.1fr 1.3fr;
+  gap: 12px;
+}
+
+.ui-admin-param-row-cost {
+  display: grid;
+  grid-template-columns: auto auto 1.6fr 1fr 0.8fr 1.2fr auto;
+  gap: 6px;
+  align-items: center;
+}
+
+.ui-admin-param-row-nocost {
+  display: grid;
+  grid-template-columns: auto auto 1.8fr 1fr 1.2fr auto;
+  gap: 6px;
+  align-items: center;
+}
+
+.ui-admin-opt-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr auto;
+  gap: 6px;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .ui-calc-main-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .ui-form-grid-2,
+  .ui-form-grid-eyelets-3,
+  .ui-form-grid-wf-dims-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .ui-admin-maincat-grid,
+  .ui-admin-subcat-grid,
+  .ui-admin-prod-grid-1,
+  .ui-admin-prod-grid-2,
+  .ui-admin-param-row-cost,
+  .ui-admin-param-row-nocost,
+  .ui-admin-opt-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+

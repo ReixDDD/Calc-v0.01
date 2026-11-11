@@ -1,0 +1,6 @@
+{
+  "name": "Калькулятор полиграфии — Konica Minolta C4080",
+  "description": "Калькулятор расчета стоимости полиграфической продукции на базе Flask и React с динамической маршрутизацией страниц для категорий, подкатегорий и товаров.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

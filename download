@@ -1,0 +1,16 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+# Runtime database, backups, temp files, uploads, and archives must not be published
+public/**/*.zip
+data/*.json
+data/*.bak
+data/*.tmp
+data/uploads/
+backend/__pycache__/
+.aistudio/
